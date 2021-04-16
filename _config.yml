@@ -1,0 +1,9 @@
+title: Goost
+description: >-
+  A general-purpose, extensible and customizable C++ extension for Godot Engine.
+github_username: goostengine
+repo: https://github.com/goostengine/goost
+
+sass:
+  sass_dir: assets/css
+  style: compressed
