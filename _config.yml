@@ -4,6 +4,12 @@ description: >-
 github_username: goostengine
 repo: https://github.com/goostengine/goost
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
 sass:
   sass_dir: assets/css
   style: compressed

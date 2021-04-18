@@ -1,0 +1,22 @@
+---
+title: Features
+---
+
+{% for feature in site.data.features %}
+<div class="row panel">
+  <div class="col-md-6 my-2">
+    {% for img in feature.images %}
+    <img class="img w-100 mx-auto d-block p-2"
+        src="/assets/img/features/{{ img }}" alt="{{ feature.name }}" />
+    {% endfor %}
+  </div>
+  <div class="col-md">
+    <h4 class="my-4">{{ feature.name }}</h4>
+      {% for desc in feature.description %}
+      <p>{{ desc }}</p>
+      {% endfor %}
+  </div>
+</div>
+{% endfor %}
+
+<h3 class="text-right">and <a href="https://goost.readthedocs.io/en/gd3/#sec-components">more</a>...</h3>

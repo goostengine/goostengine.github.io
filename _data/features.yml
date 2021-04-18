@@ -1,0 +1,60 @@
+- name: Boolean operations in 2D
+  images:
+    - poly_boolean_nodes.png
+  description:
+    - Utilize CSG-like nodes to help you prototype and build levels using only the basic geometry shapes.
+    - Modify collison shapes at run-time and build upon core polygon boolean methods.
+
+- name: Visualization
+  images:
+    - visualization.png
+  description:
+    - Make the debugging and prototyping processes easier.
+    - Customize how collision shapes look within the editor and the exported projects for each node of interest. No need to leave the editor to create separate sprites for simple shapes.
+
+- name: Randomization
+  images:
+    - randomization.png
+  description:
+    - Write more readable and intuitive code with extended randomization methods for AI, procedural generation etc.
+    - Achieve reproducible stream of randomness for all available methods and properties. Randomized by default!
+    
+
+- name: Geometry-enhanced randomness
+  images:
+    - random_points_in_triangle.png
+  description:
+    - Improve the quality of your node spawning techniques by taking advantage of efficient geometry-based randomization methods with uniform distribution of points.
+
+- name: Animated images support
+  images:
+    - animated_images.png
+  description:
+    - Import animated images as animated textures, or just import as static textures (only GIF is currently supported).
+    - Load animated images and display them in a project if you have to work with external services.
+
+- name: Color quantization and indexed images
+  images:
+    - color_quant.png
+  description:
+    - Procedurally stylize game elements based on dominant colors within a texture.
+    - Implement palette swapping without using shaders.
+
+- name: Gradient textures in 2D
+  images:
+    - gradient_textures.png
+  description:
+    - Generate both linear and radial textures with different types of fill.
+    - Use default radial light texture for Light2D nodes without leaving the editor.
+
+- name: Physics utilities
+  images:
+    - shape_casting.png
+  description:
+    - Use additional physics classes which leverage and expose hidden physics features such as shape casting via intuitive node approach.
+
+- name: Additional core structures
+  images:
+    - core_structures.png
+  description:
+    - Incorporate data structures such as doubly linked lists, multi-dimensional data containers, general-purpose resource containers...
