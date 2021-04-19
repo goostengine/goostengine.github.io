@@ -32,3 +32,10 @@ $nav-tabs-link-active-bg: $body-bg;
     @extend .m-1;
     @extend .p-1;
 }
+
+.news-panel {
+    background-color: #313131;
+    @extend .rounded;
+    @extend .m-1;
+    @extend .p-1;
+}

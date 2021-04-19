@@ -6,7 +6,7 @@ title: Godot Engine Extension
   <div class="col-md-8">
     <h2 class="display-5 my-4"><b>Let it be in Godot.</b></h2>
     <p class="lead">
-      <a href="https://github.com/goostengine"><b>Goost</b></a> is a general-purpose,
+      <a href="{{ site.org_url }}"><b>Goost</b></a> is a general-purpose,
       extensible and customizable <a href="https://godotengine.org/"><b>Godot Engine</b></a>
       extension written in C++. It aims to complement and extend the already
       powerful Godot core features in a way which allows to achieve high performance,
@@ -18,6 +18,22 @@ title: Godot Engine Extension
   </div>
   <div class="col-md-4 d-none d-md-block">
     <img class="img-fluid w-100 h-auto" src="/assets/img/logo_big.svg" alt="Goost" />
+  </div>
+</div>
+
+<div class="row news-panel m-md-5">
+  <div class="col-md-4">
+    <h2>Latest news</h2>
+  </div>
+  <div class="col-md">
+      <ul class="list-unstyled">
+        {% for post in site.posts limit:3 %}
+          <li>
+            <h4><a href="{{ post.url }}">{{ post.title }}</a></h4>
+            {{ post.excerpt }}
+          </li>
+        {% endfor %}
+      </ul>
   </div>
 </div>
 
@@ -39,7 +55,7 @@ title: Godot Engine Extension
        share your tools with Goost to be used by people in various game development
        areas, we invite you to
        <a href="https://goost.readthedocs.io/en/latest/development/general_principles.html#scope-of-features-being-developed">contribute</a>!</p>
-    <a class="btn btn-dark font-weight-bold my-2 px-4 py-2" href="https://github.com/goostengine/goost" role="button">
+    <a class="btn btn-dark font-weight-bold my-2 px-4 py-2" href="{{ site.repo }}" role="button">
       <img src="/assets/img/contacts/github.png" width=32 /> Go to GitHub
     </a>
   </div>

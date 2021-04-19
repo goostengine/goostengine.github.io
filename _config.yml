@@ -1,14 +1,22 @@
 title: Goost
 description: >-
   A general-purpose, extensible and customizable C++ extension for Godot Engine.
+
 github_username: goostengine
+org_url: https://github.com/goostengine
 repo: https://github.com/goostengine/goost
+
+markdown: kramdown
+plugins:
+  - jekyll-feed
 
 defaults:
   - scope:
       path: ""
     values:
       layout: "default"
+
+excerpt_separator: <!--more-->
 
 sass:
   sass_dir: assets/css
