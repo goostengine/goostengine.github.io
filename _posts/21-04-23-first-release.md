@@ -4,7 +4,7 @@ layout: post
 author: Andrii Doroshenko (Xrayez)
 ---
 
-This is the first public release of **Goost**: an extension for
+This is the first public release of **Goost**: the ambitious extension for
 [**Godot Engine**](https://godotengine.org/)!
 
 <!--more-->
@@ -23,3 +23,9 @@ stages of development.
 
 We hope that you find Goost useful for fulfilling powerful ideas into your
 projects. Remember: execution is only half the battle!
+
+If you'd like to discuss this, please proceed to relevant
+[1.0-beta](https://github.com/goostengine/goost/discussions/64) release
+discussion page at GitHub, and don't forget to spread the word!
+
+Thank you!
