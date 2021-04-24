@@ -10,7 +10,7 @@ version_gd3: 1.0-beta
       The project provides custom Godot builds with Goost already pre-compiled.
       Currently, only stable versions of the engine are released. If you'd like to
       compile Godot with Goost from source yourself, proceed to the official
-      <a href="https://goost.readthedocs.io/en/gd3/usage/installation.html">Goost documentation</a>
+      <a href="https://goost.readthedocs.io/en/gd3/usage/building.html">Goost documentation</a>
       to learn how to do this.
     </p>
     <p>
@@ -52,6 +52,8 @@ version_gd3: 1.0-beta
     {% assign linux_headless_mono = download_base_link | append: "mono_linux_headless_64.zip" %}
     {% assign linux_server_mono = download_base_link | append: "mono_linux_server_64.zip" %}
 
+    {% assign web_html5 = download_base_link | append: "web_editor.zip" %}
+
     <h4 class="mt-2 text-center">Godot {{ site.data.version.godot }} + Goost {{ site.data.version.goost }}</h4>
 
     <ul class="nav nav-tabs">
@@ -59,6 +61,7 @@ version_gd3: 1.0-beta
       <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#macos">macOS</a></li>
       <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#windows">Windows</a></li>
       <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#linux_server">Linux Server</a></li>
+      <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#web">Web</a></li>
     </ul>
 
     <div class="tab-content mt-2 mb-4">
@@ -81,6 +84,8 @@ version_gd3: 1.0-beta
           linux_server=linux_server
           linux_headless_mono=linux_headless_mono
           linux_server_mono=linux_server_mono %}
+      {% include platform_download.html name="Web" id="web"
+          standard=web_html5 %}
     </div>
 
     <div class="alert alert-info" role="alert">
@@ -97,6 +102,11 @@ version_gd3: 1.0-beta
     <h4 class="mb-4">Export templates</h4>
     <a class="btn btn-success font-weight-bold" href="{{ export_templates }}" role="button">Standard</a>
     <a class="btn btn-success font-weight-bold" href="{{ export_templates_mono }}" role="button">Mono (C#)</a>
+    
+    <div class="alert alert-info my-4" role="alert">
+      Please follow <a href="https://goost.readthedocs.io/en/latest/usage/installation.html#installing-export-templates">Installing
+      export templates</a> documentation page to learn how to install Goost export templates from a file.
+    </div>
 
     <div class="alert alert-info my-4" role="alert">
       <b>Note:</b> Unlike in official Godot builds, the export templates provided
