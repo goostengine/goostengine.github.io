@@ -3,7 +3,7 @@ tagline: Godot Engine Extension
 description: >-
   A general-purpose, extensible and customizable C++ extension for Godot Engine.
 
-logo: /assets/img/logo.svg
+logo_social: /assets/img/logo_social.png
 github_username: goostengine
 org_url: https://github.com/goostengine
 repo: https://github.com/goostengine/goost
