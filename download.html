@@ -22,7 +22,7 @@ version_gd3: 1.0-beta
     </div>
 
     {%- capture base_link -%}
-    {{ site.data.version.download_url_root | append: site.data.version.goost | append: "-gd3" }}
+    {{ site.data.version.download_url_root }}{{ site.data.version.goost }}{{ "%2B" }}{{ site.data.version.godot_raw }}
     {%- endcapture -%}
 
     {%- capture download_base_link -%}

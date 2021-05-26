@@ -1,6 +1,7 @@
 {
-    "goost": "1.0-beta",
-    "godot": "3.3-stable",
-    "godot_templates": "3.3.stable",
+    "goost": "1.0-stable",
+    "godot": "3.3.2-stable",
+    "godot_raw": "3.3.2",
+    "godot_templates": "3.3.2.stable",
     "download_url_root": "https://github.com/goostengine/goost/releases/download/"
 }
