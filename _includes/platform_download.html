@@ -24,6 +24,13 @@
           {% if include.id != "macos" %}
             <a class="btn btn-success font-weight-bold" href="{{ include.standard_32 }}" role="button">32-bit</a>
           {% endif %}
+          {% if include.id == "macos" %}
+            <div class="alert alert-info mt-4" role="alert">
+              <b>Important:</b> It's required to
+              <a href="https://disable-gatekeeper.github.io/">Disable Gatekeeper on macOS</a> to be able to
+              run Goost, either globally or per application.
+            </div>
+          {% endif %}
         </div>
         <div class="col">
           <h4 class="mt-2 mb-4">Mono (C#)</h4>
