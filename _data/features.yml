@@ -8,23 +8,33 @@
 - name: Visualization
   images:
     - visualization.png
+    - plot.png
   description:
     - Make the debugging and prototyping processes easier.
     - Customize how collision shapes look within the editor and the exported projects for each node of interest. No need to leave the editor to create separate sprites for simple shapes.
+    - Simplify visualization of data or simplify debugging of grid-based classes such as TileMap.
 
 - name: Randomization
   images:
     - randomization.png
+    - random_points_in_triangle.png
   description:
     - Write more readable and intuitive code with extended randomization methods for AI, procedural generation etc.
     - Achieve reproducible stream of randomness for all available methods and properties. Randomized by default!
-    
-
-- name: Geometry-enhanced randomness
-  images:
-    - random_points_in_triangle.png
-  description:
     - Improve the quality of your node spawning techniques by taking advantage of efficient geometry-based randomization methods with uniform distribution of points.
+
+- name: Gradient textures in 2D
+  images:
+    - gradient_textures.png
+  description:
+    - Generate both linear and radial textures with different types of fill.
+    - Use default radial light texture for Light2D nodes without leaving the editor.
+
+- name: Physics utilities
+  images:
+    - shape_casting.png
+  description:
+    - Use additional physics classes which leverage and expose hidden physics features such as shape casting via intuitive node approach.
 
 - name: Animated images support
   images:
@@ -39,19 +49,6 @@
   description:
     - Procedurally stylize game elements based on dominant colors within a texture.
     - Implement palette swapping without using shaders.
-
-- name: Gradient textures in 2D
-  images:
-    - gradient_textures.png
-  description:
-    - Generate both linear and radial textures with different types of fill.
-    - Use default radial light texture for Light2D nodes without leaving the editor.
-
-- name: Physics utilities
-  images:
-    - shape_casting.png
-  description:
-    - Use additional physics classes which leverage and expose hidden physics features such as shape casting via intuitive node approach.
 
 - name: Additional core structures
   images:
