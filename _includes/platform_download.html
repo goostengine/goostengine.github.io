@@ -3,23 +3,23 @@
     {% case include.id %}
       {% when "linux_server" %}
         <div class="col">
-          <h4 class="mt-2 mb-4">Standard</h4>
+          <h4 class="mt-2 mb-4">Editor</h4>
           <a class="btn btn-success font-weight-bold" href="{{ include.linux_headless }}" role="button">Headless 64-bit</a>
           <a class="btn btn-success font-weight-bold" href="{{ include.linux_server }}" role="button">Server 64-bit</a>
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <h4 class="mt-2 mb-4">Mono (C#)</h4>
           <a class="btn btn-success font-weight-bold" href="{{ include.linux_headless_mono }}" role="button">Headless 64-bit</a>
           <a class="btn btn-success font-weight-bold" href="{{ include.linux_server_mono }}" role="button">Server 64-bit</a>
-        </div>
+        </div> -->
       {% when "web" %}
         <div class="col">
-          <h4 class="mt-2 mb-4">Standard</h4>
+          <h4 class="mt-2 mb-4">Editor</h4>
           <a class="btn btn-success font-weight-bold" href="{{ include.standard }}" role="button">HTML5</a>
         </div>
       {% else %}
         <div class="col">
-          <h4 class="mt-2 mb-4">Standard</h4>
+          <h4 class="mt-2 mb-4">Editor</h4>
           <a class="btn btn-success font-weight-bold" href="{{ include.standard_64 }}" role="button">64-bit</a>
           {% if include.id != "macos" %}
             <a class="btn btn-success font-weight-bold" href="{{ include.standard_32 }}" role="button">32-bit</a>
@@ -32,13 +32,13 @@
             </div>
           {% endif %}
         </div>
-        <div class="col">
+        <!-- <div class="col">
           <h4 class="mt-2 mb-4">Mono (C#)</h4>
           <a class="btn btn-success font-weight-bold" href="{{ include.mono_64 }}" role="button">64-bit</a>
           {% if include.id != "macos" %}
             <a class="btn btn-success font-weight-bold" href="{{ include.mono_32 }}" role="button">32-bit</a>
           {% endif %}
-        </div>
+        </div> -->
     {% endcase %}
   </div>
 </div>
