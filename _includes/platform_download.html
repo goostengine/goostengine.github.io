@@ -25,10 +25,12 @@
             <a class="btn btn-success font-weight-bold" href="{{ include.standard_32 }}" role="button">32-bit</a>
           {% endif %}
           {% if include.id == "macos" %}
-            <div class="alert alert-info mt-4" role="alert">
-              <b>Important:</b> It's required to
-              <a href="https://disable-gatekeeper.github.io/">Disable Gatekeeper on macOS</a> to be able to
-              run Goost, either globally or per application.
+            <div class="alert alert-warning mt-4" role="alert">
+              <b>Important:</b> As of now, it's required to
+              <a href="https://disable-gatekeeper.github.io/">disable Gatekeeper on macOS</a> to be able to
+              run Goost, either globally or per application. Additionally, you may need to
+              <a href="https://www.idownloadblog.com/2020/11/23/enforce-rosetta-emulation-tutorial/">force Rosetta
+              emulation</a> if you're running Goost on Apple M1 due to code signing requirements on arm64 architecture.
             </div>
           {% endif %}
         </div>
