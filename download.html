@@ -11,15 +11,14 @@ version_gd3: 1.0-beta
       compile Godot with Goost from source yourself, proceed to the official
       <a href="https://goost.readthedocs.io/en/latest/usage/building.html">Goost documentation</a>
       to learn how to do this.</p>
+    <p><b>Note:</b> Goost is an extension to Godot and thus contains full Godot features +
+      additional Goost-specific features some of which are in beta stage.
+      While the Goost binaries were built using the official
+      <a href="https://github.com/godotengine/build-containers">Godot build containers</a>,
+      not all of them may be properly tested as of now.</p>
     <p>If you have any doubts regarding what you need to download, you can refer
       to <a href="https://godotengine.org/download">Godot's download page</a> for
       more details specific to the engine.</p>
-    <div class="alert alert-warning" role="alert">
-      <b>Warning:</b> Goost is still considered in early development phase.
-      While the Goost binaries were built using the official
-      <a href="https://github.com/godotengine/build-containers">Godot build containers</a>,
-      not all of them are properly tested, and they are currently not code-signed.
-    </div>
 
     {%- capture base_link -%}
     {{ site.data.version.download_url_root }}{{ site.data.version.goost }}{{ "%2B" }}{{ site.data.version.godot_raw }}
